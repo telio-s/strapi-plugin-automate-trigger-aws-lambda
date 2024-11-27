@@ -1,0 +1,75 @@
+{
+  "version": "0.0.0",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.699.0",
+    "@strapi/design-system": "^2.0.0-rc.13",
+    "@strapi/icons": "^2.0.0-rc.13",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "react-hook-form": "^7.53.2",
+    "react-intl": "^7.0.1",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.2.7",
+    "@strapi/strapi": "^5.4.1",
+    "@strapi/typescript-utils": "^5.4.1",
+    "@types/crypto-js": "^4.2.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.4.1",
+    "@strapi/sdk-plugin": "^5.2.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.1.13"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "automate-trigger-aws-lambda",
+    "displayName": "Automate trigger AWS Lambda",
+    "description": "Automate trigger AWS Lambda"
+  },
+  "name": "automate-trigger-aws-lambda",
+  "description": "Automate trigger AWS Lambda",
+  "license": "MIT",
+  "author": "telio-s <telio.s@hotmail.com>"
+}
