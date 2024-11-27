@@ -1,5 +1,6 @@
 {
-  "version": "0.0.0",
+  "name": "strapi-plugin-automate-trigger-aws-lambda",
+  "version": "1.0.0",
   "keywords": [],
   "type": "commonjs",
   "exports": {
@@ -68,8 +69,11 @@
     "displayName": "Automate trigger AWS Lambda",
     "description": "Automate trigger AWS Lambda"
   },
-  "name": "automate-trigger-aws-lambda",
   "description": "Automate trigger AWS Lambda",
   "license": "MIT",
-  "author": "telio-s <telio.s@hotmail.com>"
+  "author": "telio-s <telio.s@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telio-s/strapi-plugin-automate-trigger-aws-lambda"
+  }
 }
