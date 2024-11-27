@@ -40,4 +40,9 @@ This plugin simplifies the integration of Strapi with AWS Lambda by automating t
   * Sends the payload to the specified AWS Lambda function
 
 ## Screenshots
-  
+  <p align="center">
+    <img src="./docs/Screenshot 2567-11-27 at 4.35.11 PM.png" alt="UI" width="500" />
+  </p>
+  <p align="center">
+    <img src="./docs/Screenshot 2567-11-27 at 5.23.08 PM.png" alt="UI" width="500" />
+  </p>
