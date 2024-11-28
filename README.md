@@ -39,6 +39,17 @@ This plugin simplifies the integration of Strapi with AWS Lambda by automating t
   * Collects the newly created entry as a payload
   * Sends the payload to the specified AWS Lambda function
 
+### Usage
+1. Install
+```
+npm i strapi-plugin-automate-trigger-aws-lambda
+```
+2. Create .env file
+```
+ENCRYPTION_KEY="Your Key"
+```
+Required to use ENCRYPTION_KEY variable as a key to encrypt your AWS Access Key
+
 ## Screenshots
   <p align="center">
     <img src="./docs/Screenshot 2567-11-27 at 4.35.11 PM.png" alt="UI" width="500" />
