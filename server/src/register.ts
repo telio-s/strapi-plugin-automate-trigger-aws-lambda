@@ -1,13 +1,15 @@
 import type { Core } from '@strapi/strapi';
 import dotenv from 'dotenv';
-import path from 'path';
-// Manually load the .env file from the plugin folder
-dotenv.config({
-  path: path.resolve(__dirname, '../../.env'), // Make sure the path points to your plugin's .env
-});
+
+dotenv.config();
 
 const register = ({ strapi }: { strapi: Core.Strapi }) => {
   // register phase
+  if (!process.env.ENCRYPTION_KEY) {
+    throw new Error(
+      'Missing required environment variables: ENCRYPTION_KEY for automate trigger AWS Lmabda.'
+    );
+  }
 };
 
 export default register;
