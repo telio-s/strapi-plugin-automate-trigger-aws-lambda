@@ -71,6 +71,9 @@ module.exports = ({ env }) => ({
 });
 ```
 
+## Tutorial
+[Click here](https://youtu.be/fT1SZKYKGeE)
+
 ## Screenshots
 
   <p align="center">
